@@ -41,7 +41,7 @@ function copyToClipboard(text) {
     copyElement.value = text;
     copyElement.select();
     document.execCommand("copy");
-    $('body').remove(copyElement);
+    copyElement.remove();
     $('body').append("<div class='copied-info'>Styles Copied</div>");
     setTimeout(() => {
        $('.copied-info').remove(); 
