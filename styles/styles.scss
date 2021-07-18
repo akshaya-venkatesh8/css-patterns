@@ -31,13 +31,18 @@ $theme-font: "Lato", sans-serif;
     text-align: center;
     z-index: 10;
     background-color: white;
-    span {
-      background: linear-gradient(to right, royalblue, darkblue, black);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+   
   }
+  
 }
+
+.header{
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: $theme-font;
+  }
 .wrapper {
 text-align: center;
 margin-top: 40px;
@@ -45,7 +50,7 @@ margin-top: 40px;
  grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) );
  gap: 1rem;
     
- padding: 2rem;
+ padding: 0rem 2rem;
   .pattern {
     &.close {
      aspect-ratio: 1/1;
@@ -59,12 +64,14 @@ margin-top: 40px;
     overflow-y: auto;
     transition: border-radius 0.2s;
     .icon {
+
       color: black;
       position: absolute;
       top: 15px;
       right: 15px;
-      font-size: 20px;
+      font-size: 30px;
       display: none;
+      z-index: 10;
     }
     .title {
       display: none;
@@ -157,11 +164,11 @@ margin-top: 40px;
       background-size: 20px 20px;
     }
     &.nine {
-      background: linear-gradient(90deg, white 50%, transparent 50%) 17px 0,
-        linear-gradient(120deg, black 25%, transparent 26%),
-        linear-gradient(60deg,  transparent 49%, black 50%),
-        white;
-      background-size: 32px 42px;
+      background: linear-gradient(0deg, white 15%, transparent 15%) 0 6px,
+                  linear-gradient(90deg, white 50%, transparent 50%) -10px 0, 
+                  linear-gradient(120deg, black 50%, transparent 50%), 
+                  linear-gradient(60deg, transparent 49%, black 50%), white;
+      background-size: 40px 40px;
     }
     &.ten {
       background: linear-gradient(-60deg, seashell 50%, transparent 50%) 8px 0,
@@ -200,4 +207,31 @@ margin-top: 40px;
     }
   }
 }
+.copied-info {
+  padding: 1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 19;
+  background-color: white;
+  border: 1px solid grey;
+}
+.copy {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 8px grey;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  .copy-icon {
+    font-size: 30px;
+  }
+}
+
 /* STYLES - END */
