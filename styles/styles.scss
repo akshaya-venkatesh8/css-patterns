@@ -43,13 +43,38 @@ $theme-font: "Lato", sans-serif;
       font-weight: bold;
       font-family: $theme-font;
   }
+  .copied-info {
+  padding: 1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 19;
+  background-color: white;
+  border: 1px solid grey;
+}
+.copy {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 8px grey;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  .copy-icon {
+    font-size: 30px;
+  }
+}
 .wrapper {
 text-align: center;
 margin-top: 40px;
  display: grid;
  grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) );
- gap: 1rem;
-    
+ gap: 1rem;   
  padding: 0rem 2rem;
   .pattern {
     &.close {
@@ -58,13 +83,11 @@ margin-top: 40px;
       border-radius: 50%;
       box-shadow: 5px 5px 5px #999;
     }
-    
     cursor: pointer;
     position: relative;
     overflow-y: auto;
     transition: border-radius 0.2s;
     .icon {
-
       color: black;
       position: absolute;
       top: 15px;
@@ -107,21 +130,22 @@ margin-top: 40px;
         display: none;
       }
     }
+  }
+}
 
-    
-    &.one {
+  .one {
       background: linear-gradient(-45deg, white 50%, transparent 50%) 8px 0,
         linear-gradient(45deg, transparent 50%, pink 50%), white;
 
       background-size: 32px 32px;
     }
-    &.two {
+    .two {
       background: linear-gradient(-45deg, plum 25%, transparent 50%, plum 25%)
           16px 0,
         linear-gradient(45deg, plum 25%, transparent 50%, plum 25%), black;
       background-size: 32px 128px;
     }
-    &.three {
+    .three {
       background-color: white;
       background-image: radial-gradient(
         navy 4px,
@@ -135,7 +159,7 @@ margin-top: 40px;
       );
       background-size: 60px 60px;
     }
-    &.four {
+    .four {
       background: linear-gradient(-45deg, white 50%, transparent 50%) 1px 0,
         linear-gradient(45deg, transparent 50%, rosybrown 50%),
         linear-gradient(135deg, white 50%, transparent 50%) 16px 0,
@@ -143,39 +167,39 @@ margin-top: 40px;
 
       background-size: 18px 54px;
     }
-    &.five {
+    .five {
       background: linear-gradient(60deg, mintcream 50%, transparent 50%) 6px 0,
         linear-gradient(-60deg, transparent 50%, midnightblue 50%), mintcream;
       background-size: 32px 32px;
     }
-    &.six {
+    .six {
       background: radial-gradient(circle, white 20px, skyblue 10px), skyblue;
       background-size: 25px 60px;
     }
-    &.seven {
+    .seven {
       background: radial-gradient(snow 16px, transparent 16px), chocolate;
       background-size: 30px 30px;
     }
 
-    &.eight {
+    .eight {
       background: linear-gradient(90deg, burlywood 46%, transparent 50%),
         linear-gradient(180deg, transparent 50%, burlywood 54%), bisque;
 
       background-size: 20px 20px;
     }
-    &.nine {
+    .nine {
       background: linear-gradient(0deg, white 15%, transparent 15%) 0 6px,
                   linear-gradient(90deg, white 50%, transparent 50%) -10px 0, 
                   linear-gradient(120deg, black 50%, transparent 50%), 
                   linear-gradient(60deg, transparent 49%, black 50%), white;
       background-size: 40px 40px;
     }
-    &.ten {
+    .ten {
       background: linear-gradient(-60deg, seashell 50%, transparent 50%) 8px 0,
         linear-gradient(60deg, transparent 50%, PaleVioletRed 50%), seashell;
       background-size: 16px 32px;
     }
-    &.eleven {
+    .eleven {
       background: linear-gradient(
           90deg,
           rgba(0, 0, 0, 0.5) 20px,
@@ -189,7 +213,7 @@ margin-top: 40px;
         floralwhite;
       background-size: 40px 40px;
     }
-    &.twelve {
+    .twelve {
       background: linear-gradient(75deg, rgba(0, 0, 0, 0.4) 8px,transparent 10px),
         linear-gradient(-75deg, rgba(0, 0, 0, 0.4) 8px, transparent 10px),
         linear-gradient(60deg, rgba(0, 0, 0, 0.6) 10px, transparent 10px),
@@ -205,33 +229,4 @@ margin-top: 40px;
 
       background-size: 100px 100px;
     }
-  }
-}
-.copied-info {
-  padding: 1rem;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-  z-index: 19;
-  background-color: white;
-  border: 1px solid grey;
-}
-.copy {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: white;
-  padding: 0.5rem;
-  box-shadow: 2px 2px 8px grey;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  .copy-icon {
-    font-size: 30px;
-  }
-}
-
 /* STYLES - END */

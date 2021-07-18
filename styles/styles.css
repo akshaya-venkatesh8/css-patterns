@@ -46,6 +46,37 @@
   font-family: "Lato", sans-serif;
 }
 
+.copied-info {
+  padding: 1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 19;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.copy {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  padding: 0.5rem;
+  -webkit-box-shadow: 2px 2px 8px grey;
+          box-shadow: 2px 2px 8px grey;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.copy .copy-icon {
+  font-size: 30px;
+}
+
 .wrapper {
   text-align: center;
   margin-top: 40px;
@@ -122,97 +153,66 @@
   display: none;
 }
 
-.wrapper .pattern.one {
+.one {
   background: linear-gradient(-45deg, white 50%, transparent 50%) 8px 0, linear-gradient(45deg, transparent 50%, pink 50%), white;
   background-size: 32px 32px;
 }
 
-.wrapper .pattern.two {
+.two {
   background: linear-gradient(-45deg, plum 25%, transparent 50%, plum 25%) 16px 0, linear-gradient(45deg, plum 25%, transparent 50%, plum 25%), black;
   background-size: 32px 128px;
 }
 
-.wrapper .pattern.three {
+.three {
   background-color: white;
   background-image: radial-gradient(navy 4px, aqua 5px, transparent 12px, transparent 15px, darkblue 16px, darkblue 20px, transparent 21px, transparent 25px);
   background-size: 60px 60px;
 }
 
-.wrapper .pattern.four {
+.four {
   background: linear-gradient(-45deg, white 50%, transparent 50%) 1px 0, linear-gradient(45deg, transparent 50%, rosybrown 50%), linear-gradient(135deg, white 50%, transparent 50%) 16px 0, linear-gradient(-135deg, transparent 50%, rosybrown 50%), white;
   background-size: 18px 54px;
 }
 
-.wrapper .pattern.five {
+.five {
   background: linear-gradient(60deg, mintcream 50%, transparent 50%) 6px 0, linear-gradient(-60deg, transparent 50%, midnightblue 50%), mintcream;
   background-size: 32px 32px;
 }
 
-.wrapper .pattern.six {
+.six {
   background: radial-gradient(circle, white 20px, skyblue 10px), skyblue;
   background-size: 25px 60px;
 }
 
-.wrapper .pattern.seven {
+.seven {
   background: radial-gradient(snow 16px, transparent 16px), chocolate;
   background-size: 30px 30px;
 }
 
-.wrapper .pattern.eight {
+.eight {
   background: -webkit-gradient(linear, left top, right top, color-stop(46%, burlywood), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(54%, burlywood)), bisque;
   background: linear-gradient(90deg, burlywood 46%, transparent 50%), linear-gradient(180deg, transparent 50%, burlywood 54%), bisque;
   background-size: 20px 20px;
 }
 
-.wrapper .pattern.nine {
+.nine {
   background: linear-gradient(0deg, white 15%, transparent 15%) 0 6px, linear-gradient(90deg, white 50%, transparent 50%) -10px 0, linear-gradient(120deg, black 50%, transparent 50%), linear-gradient(60deg, transparent 49%, black 50%), white;
   background-size: 40px 40px;
 }
 
-.wrapper .pattern.ten {
+.ten {
   background: linear-gradient(-60deg, seashell 50%, transparent 50%) 8px 0, linear-gradient(60deg, transparent 50%, PaleVioletRed 50%), seashell;
   background-size: 16px 32px;
 }
 
-.wrapper .pattern.eleven {
+.eleven {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 20px, transparent 20px), linear-gradient(0deg, transparent 50%, rgba(200, 0, 0, 0.5) 50%) 20px 20px, linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%) 40px 0, linear-gradient(180deg, transparent 20px, rgba(0, 0, 0, 0.5) 20px) 40px 0, floralwhite;
   background-size: 40px 40px;
 }
 
-.wrapper .pattern.twelve {
+.twelve {
   background: linear-gradient(75deg, rgba(0, 0, 0, 0.4) 8px, transparent 10px), linear-gradient(-75deg, rgba(0, 0, 0, 0.4) 8px, transparent 10px), linear-gradient(60deg, rgba(0, 0, 0, 0.6) 10px, transparent 10px), linear-gradient(-60deg, rgba(0, 0, 0, 0.6) 10px, transparent 10px), linear-gradient(45deg, black 8px, transparent 8px), linear-gradient(-45deg, black 8px, transparent 8px), linear-gradient(255deg, rgba(0, 0, 0, 0.4) 8px, transparent 10px), linear-gradient(-255deg, rgba(0, 0, 0, 0.4) 8px, transparent 10px), linear-gradient(240deg, rgba(0, 0, 0, 0.6) 10px, transparent 10px), linear-gradient(-240deg, rgba(0, 0, 0, 0.6) 10px, transparent 10px), linear-gradient(135deg, black 8px, transparent 8px), linear-gradient(-135deg, black 8px, transparent 8px), white;
   background-size: 100px 100px;
-}
-
-.copied-info {
-  padding: 1rem;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 5px;
-  z-index: 19;
-  background-color: white;
-  border: 1px solid grey;
-}
-
-.copy {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: white;
-  padding: 0.5rem;
-  -webkit-box-shadow: 2px 2px 8px grey;
-          box-shadow: 2px 2px 8px grey;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.copy .copy-icon {
-  font-size: 30px;
 }
 
 /* STYLES - END */
