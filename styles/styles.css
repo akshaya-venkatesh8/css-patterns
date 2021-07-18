@@ -127,6 +127,11 @@
   background: rgba(0, 0, 0, 0.5);
   border-radius: inherit;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+  
 }
 
 .wrapper .pattern:hover .title {
