@@ -2,8 +2,8 @@
 
 ### If you are interested in creating patterns this blog should help you: https://dev.to/venkyakshaya/creating-patterns-with-css-simplified-5a60
 #### This project is currently live at https://akshaya-venkatesh8.github.io/css-patterns/
-
-#### To contribute to this gallery:
+### Contributions in any form are welcome!
+#### To add a pattern to this gallery:
 - Copy and paste the last div with the class "pattern" in the wrapper class
 - Replace your custom class (For eg. thirteen - the next number in words) in the new div
 - Add your background styles at the bottom of styles.css
