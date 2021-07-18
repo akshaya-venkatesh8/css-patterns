@@ -1,5 +1,6 @@
 ### This project holds a collection of CSS-3 patterns created using background properties.
 
+### If you are interested in creating patterns this blog should help you: https://dev.to/venkyakshaya/creating-patterns-with-css-simplified-5a60
 #### This project is currently live at https://akshaya-venkatesh8.github.io/css-patterns/
 
 #### To contribute to this gallery:
