@@ -3,15 +3,9 @@
 /* VARIABLES - END */
 /* COMMONS - START */
 .flex-center, .body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -52,8 +46,7 @@
   position: absolute;
   top: 30px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 5px;
   z-index: 19;
   background-color: white;
@@ -66,8 +59,7 @@
   right: 30px;
   background-color: white;
   padding: 0.5rem;
-  -webkit-box-shadow: 2px 2px 8px grey;
-          box-shadow: 2px 2px 8px grey;
+  box-shadow: 2px 2px 8px grey;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -82,8 +74,8 @@
   margin-top: 40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+ 
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
   padding: 0rem 2rem;
 }
@@ -92,16 +84,13 @@
   cursor: pointer;
   position: relative;
   overflow-y: auto;
-  -webkit-transition: border-radius 0.2s;
-  transition: border-radius 0.2s;
 }
 
 .wrapper .pattern.close {
   aspect-ratio: 1/1;
   display: inline-block;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 5px 5px #999;
-          box-shadow: 5px 5px 5px #999;
+  box-shadow: 5px 5px 5px #999;
 }
 
 .wrapper .pattern .icon {
@@ -195,7 +184,6 @@
 }
 
 .eight {
-  background: -webkit-gradient(linear, left top, right top, color-stop(46%, burlywood), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(54%, burlywood)), bisque;
   background: linear-gradient(90deg, burlywood 46%, transparent 50%), linear-gradient(180deg, transparent 50%, burlywood 54%), bisque;
   background-size: 20px 20px;
 }
